@@ -6,4 +6,8 @@
     line-height: 20px;
     text-align: justify;
     font-size: 25px;
+    padding-top: 200px;
+    padding-left: 10px;
+    padding-right: 10px;
+    box-shadow: 20px 20px 200px rgb(206, 206, 206);
 }
