@@ -41,6 +41,11 @@ body {
         width: 750px;
         margin: 0px auto;
     }
+
+    .navbar li {
+        display: inline-block;
+        border-bottom: none;
+    }
 }
 
 @media(min-width: 992px) {
