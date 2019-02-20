@@ -6,7 +6,33 @@ body {
     background-color: salmon;
     width: 100%;
     min-height: 300px;
+}
 
+.navbar {
+    background-color: darkseagreen;
+    width: 100%;
+    padding: 10px 0px;
+}
+
+.navbar a {
+    font-size: 22px;
+    text-decoration: none;
+    color: darkred;
+    line-height: 36px;
+}
+
+.navbar ul {
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+    text-align: center;
+}
+
+.navbar li {
+    border-bottom: 2px solid salmon;
+}
+.navbar li:last-child {
+    border-bottom: none;
 }
 
 @media(min-width: 768px) {
@@ -22,3 +48,4 @@ body {
         background-color: yellowgreen;
     }
 }
+
