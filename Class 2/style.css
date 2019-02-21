@@ -117,14 +117,15 @@ label {
 
     .logo {
         visibility: visible;
-        margin-left: 7%;
         display: center;
         position: relative;
         text-align: left;
+        margin-top: 5px;
     }
 
     .navbar {
-        padding: 10px;
+        padding: 0px;
+        height: 70px;
     }
 
     #toggle:checked + ul {
@@ -133,9 +134,19 @@ label {
 
     .navbar ul {
         display: inline-block;
-        width: 50%;
-        list-style: none;
+        width: 100%;
     }
+
+    .navbar li {
+        list-style: none;
+        display: inline-block;
+        padding: 20px;
+        text-align: center;
+        margin: auto 0px;
+        position: relative;
+        top: -65px;
+    }
+    
 
 
 }
