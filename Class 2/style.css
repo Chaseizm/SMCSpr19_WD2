@@ -1,23 +1,46 @@
+@import url('https://fonts.googleapis.com/css?family=Merriweather+Sans');
 body {
     margin: 0px;
+    font-family: 'Merriweather Sans', sans-serif;
+    letter-spacing: 1.3px;
+}
+
+.background {
+    position: fixed;
+    background-color: rgb(235, 235, 235);
+    width: 100%;
+    height: 100%;
 }
 
 .container {
-    background-color: salmon;
     width: 100%;
-    min-height: 300px;
+}
+
+label {
+    margin: 10px 30px;
+    font-size: 25px;
+    line-height: 55px;
+    display: block;
+    width: 30px;
+    float: right;
+}
+
+#toggle {
+    display: none;
+}
+
+#toggle:checked + ul {
+    display: block;
 }
 
 .navbar {
-    background-color: darkseagreen;
     width: 100%;
-    padding: 10px 0px;
 }
 
 .navbar a {
-    font-size: 22px;
+    font-size: 15px;
     text-decoration: none;
-    color: darkred;
+    color: rgb(46, 46, 46);
     line-height: 36px;
 }
 
@@ -26,13 +49,22 @@ body {
     padding: 0px;
     margin: 0px;
     text-align: center;
+    display: none;
+    clear:both;
 }
 
+
 .navbar li {
-    border-bottom: 2px solid salmon;
+    box-shadow: 0 5px 19px -6px rgb(219, 219, 219);
 }
 .navbar li:last-child {
-    border-bottom: none;
+    box-shadow: none;
+}
+
+.imgcontainer{
+    width: 100%;
+    height: 100%;
+    background-image: url(assets/img.jpg);
 }
 
 @media(min-width: 768px) {
@@ -45,6 +77,10 @@ body {
     .navbar li {
         display: inline-block;
         border-bottom: none;
+    }
+
+    .navbar ul {
+        text-align: right;
     }
 }
 
