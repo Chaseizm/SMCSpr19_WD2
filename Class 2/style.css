@@ -22,7 +22,7 @@ label {
     display: inline-block;
     width: 45%;
     text-align: right;
-    margin-right: 10px;
+    margin-right: 16px;
 }
 
 .logo {
@@ -78,6 +78,15 @@ label {
     background-size: cover;
 }
 
+.contentbackground {
+    background-color: rgb(255, 255, 255, .6);
+    width: 87%;
+    margin: 0px auto;
+    position: relative;
+    top: 26px;
+    padding-bottom: 20px;
+}
+
 .imgcontainer h1 {
     margin-top: 0px;
     font-size: 22px;
@@ -88,7 +97,7 @@ label {
 
 .imgcontainer p {
     font-size: 15px;
-    padding: 0px 50px;
+    padding: 0px 22px;
     line-height: 22px;
 }
 
@@ -159,6 +168,11 @@ label {
         margin: auto 0px;
         position: relative;
         top: -65px;
+        left: 12px;
+    }
+
+    .contentbackground p {
+        column-count: 2;
     }
     
 
