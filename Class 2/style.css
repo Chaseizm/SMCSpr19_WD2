@@ -114,6 +114,7 @@ label {
 
     .logo {
         margin-right: -50px;
+        width: 25px;
     }
 
     label {
@@ -172,7 +173,6 @@ label {
         margin: auto 0px;
         position: relative;
         top: -65px;
-        left: 12px;
     }
 
     .contentbackground p {
