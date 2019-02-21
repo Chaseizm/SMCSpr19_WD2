@@ -78,6 +78,20 @@ label {
     background-size: cover;
 }
 
+.imgcontainer h1 {
+    margin-top: 0px;
+    font-size: 22px;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 10px;
+}
+
+.imgcontainer p {
+    font-size: 15px;
+    padding: 0px 50px;
+    line-height: 22px;
+}
+
 @media(min-width: 768px) {
     .imgcontainer {
         width: 100%;
