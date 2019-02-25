@@ -96,9 +96,9 @@ label {
 }
 
 .imgcontainer p {
-    font-size: 15px;
+    font-size: 13px;
     padding: 0px 22px;
-    line-height: 22px;
+    line-height: 21.5px;
 }
 
 @media(min-width: 768px) {
@@ -177,6 +177,11 @@ label {
 
     .contentbackground p {
         column-count: 3;
+    }
+
+    .imgcontainer p {
+        font-size: 14px;
+
     }
     
 
