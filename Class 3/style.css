@@ -1,0 +1,141 @@
+.container {
+    background-color: oldlace;
+}
+
+.A {
+    background-image: url(assets/look1.jpg);
+}
+
+.B {
+    background-color: lightgreen;
+}
+
+.C {
+    background-image: url(assets/look2.jpg);
+}
+
+.D {
+    background-image: url(assets/look3.jpg);
+}
+
+.E {
+    background-color: azure;
+}
+
+.F {
+    background-image: url(assets/look4.jpg);
+}
+
+.G {
+    background-color: lightcoral;
+}
+
+.H {
+    background-image: url(assets/look5.jpg);
+}
+
+.I {
+    background-color: lightskyblue;
+}
+
+.J {
+    background-image: url(assets/look6.jpg);
+}
+
+.K {
+    background-color: azure;
+}
+
+.L {
+    background-image: url(assets/look7.jpg);
+}
+
+.floater-section {
+    float: left;
+    width: 100%;
+    min-height: 200px;
+    margin-bottom: 20px;
+}
+
+.clearfix {
+    clear: both;
+}/******* SMALL SCREENS ***********/
+@media (min-width: 450px) {
+    .small-width-25 {
+        width: 25%
+    }
+
+    .small-width-33 {
+        width: 33%
+    }
+
+    .small-width-50 {
+        width: 50%
+    }
+
+    .small-width-66 {
+        width: 66%
+    }
+
+    .small-width-75 {
+        width: 75%
+    }
+
+    .small-width-100 {
+        width: 100%
+    }
+}
+
+/******** MEDIUM SCREENS **********/
+@media (min-width: 768px) {
+    .med-width-25 {
+        width: 25%
+    }
+
+    .med-width-33 {
+        width: 33%
+    }
+
+    .med-width-50 {
+        width: 50%
+    }
+
+    .med-width-66 {
+        width: 66%
+    }
+
+    .med-width-75 {
+        width: 75%
+    }
+
+    .med-width-100 {
+        width: 100%
+    }
+}
+
+/******** LARGE SCREENS **********/
+@media (min-width: 992px) {
+    .large-width-25 {
+        width: 25%
+    }
+
+    .large-width-33 {
+        width: 33%
+    }
+
+    .large-width-50 {
+        width: 50%
+    }
+
+    .large-width-66 {
+        width: 66%
+    }
+
+    .large-width-75 {
+        width: 75%
+    }
+
+    .large-width-100 {
+        width: 100%
+    }
+}
