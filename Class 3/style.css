@@ -1,72 +1,145 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono');
+
+body {
+    margin: 0px;
+}
+
 .container {
     background-color: oldlace;
 }
 
+
 .A {
     background-image: url(assets/look1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    float: left;
+    width: 100%;
+    min-height: 400px;
 }
 
 .B {
-    background-color: lightgreen;
+    background-color: rgb(255, 254, 206);
+    font-family: 'Roboto Mono', monospace;
+    display: none;
+    float: left;
+    width: 100%;
+    min-height: 400px;
+}
+.B h1 {
+    color: rgb(255, 181, 233);
+    position: absolute;
+    left: 180px;
+    top: 310px;
 }
 
 .C {
     background-image: url(assets/look2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    float: left;
+    width: 100%;
+    min-height: 400px;
 }
 
 .D {
     background-image: url(assets/look3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    float: left;
+    width: 100%;
+    min-height: 400px;
 }
 
 .E {
     background-color: azure;
+    float: left;
+    width: 100%;
+    min-height: 400px;
+}
+.E h2 {
+    color: rgb(255, 181, 233);
+    font-family: 'Roboto Mono', monospace;
+    position: relative;
+    top: 107px;
+    left: -80px;
 }
 
 .F {
     background-image: url(assets/look4.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    float: left;
+    width: 100%;
+    min-height: 400px;
 }
 
 .G {
     background-color: lightcoral;
+    float: left;
+    width: 100%;
+    min-height: 400px;
 }
 
 .H {
     background-image: url(assets/look5.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    float: left;
+    width: 100%;
+    min-height: 400px;
 }
 
 .I {
     background-color: lightskyblue;
+    background-image: url(assets/look6.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    float: left;
+    width: 100%;
+    min-height: 400px;
 }
 
 .J {
-    background-image: url(assets/look6.jpg);
+    background-color: azure;
+    float: left;
+    width: 100%;
+    min-height: 400px;
 }
 
 .K {
     background-color: azure;
+    float: left;
+    width: 100%;
+    min-height: 400px;
 }
 
 .L {
     background-image: url(assets/look7.jpg);
-}
-
-.floater-section {
+    background-size: cover;
+    background-repeat: no-repeat;
     float: left;
     width: 100%;
-    min-height: 200px;
-    margin-bottom: 20px;
+    min-height: 400px;
 }
 
 .clearfix {
     clear: both;
-}/******* SMALL SCREENS ***********/
+    float: left;
+    width: 100%;
+    min-height: 400px;
+}
+
+
+
+/******* SMALL SCREENS ***********/
 @media (min-width: 450px) {
     .small-width-25 {
         width: 25%
     }
 
     .small-width-33 {
-        width: 33%
+        width: 33.333%
     }
 
     .small-width-50 {
@@ -84,6 +157,15 @@
     .small-width-100 {
         width: 100%
     }
+
+    .B {
+        display: block;
+    }
+
+    .D {
+        background-position-x: -145px;
+    }
+
 }
 
 /******** MEDIUM SCREENS **********/
@@ -93,7 +175,7 @@
     }
 
     .med-width-33 {
-        width: 33%
+        width: 33.333%
     }
 
     .med-width-50 {
@@ -120,7 +202,7 @@
     }
 
     .large-width-33 {
-        width: 33%
+        width: 33.333%
     }
 
     .large-width-50 {
