@@ -237,4 +237,16 @@ body {
     .large-width-100 {
         width: 100%
     }
+
+    .float-section {
+        min-height: 950px;
+    }
+
+    .K {
+        background-position: inherit;
+    }
+
+    .L {
+        display: hidden;
+    }
 }
