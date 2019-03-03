@@ -109,16 +109,16 @@ body {
 }
 
 .K {
-    background-color: azure;
+    background-image: url(assets/look7.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
     float: left;
     width: 100%;
     min-height: 400px;
 }
 
 .L {
-    background-image: url(assets/look7.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
+    background-color: azure;
     float: left;
     width: 100%;
     min-height: 400px;
@@ -167,6 +167,14 @@ body {
         display: hidden;
     }
 
+    .I {
+        background-position: right;
+    }
+
+    .L {
+        display: none;
+    }
+
 }
 
 /******** MEDIUM SCREENS **********/
@@ -193,6 +201,14 @@ body {
 
     .med-width-100 {
         width: 100%
+    }
+
+    .float-section {
+        min-height: 800px;
+    }
+
+    .K {
+        background-position: -135px;
     }
 }
 
