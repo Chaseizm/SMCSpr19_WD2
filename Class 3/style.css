@@ -137,10 +137,11 @@ label {
 }
 
 .G {
-    background-color: lightcoral;
+    background-color: azure;
     float: left;
     width: 100%;
     min-height: 400px;
+    display: none;
 }
 
 .H {
@@ -167,6 +168,7 @@ label {
     float: left;
     width: 100%;
     min-height: 400px;
+    display: none;
 }
 
 .K {
@@ -183,6 +185,7 @@ label {
     float: left;
     width: 100%;
     min-height: 400px;
+    display: none;
 }
 
 .clearfix {
@@ -235,6 +238,17 @@ label {
         display: block;
     }
 
+    .D h2 {
+        display: block;
+    }
+
+    .G {
+        display: block;
+    }
+
+    .J {
+        display: block;
+    }
 }
 
 /******** MEDIUM SCREENS **********/
