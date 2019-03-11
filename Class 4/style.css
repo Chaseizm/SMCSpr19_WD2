@@ -1,3 +1,54 @@
+label {
+    font-size: 25px;
+    line-height: 55px;
+    float: right;
+    color: whitesmoke;
+    padding-right: 30px;
+    padding-top: 10px;
+}
+
+.navbar {
+    width: 100%;
+    position: fixed;
+    padding-top: 10px;
+    z-index: 10;
+}
+
+.navbar a {
+    font-size: 17px;
+    text-decoration: none;
+    color: whitesmoke;
+    line-height: 38px;
+}
+
+.navbar ul {
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+    text-align: center;
+    display: none;
+    font-family: 'Roboto Mono', monospace;
+}
+
+.navbar li:first-child {
+    padding-top: 5px;
+}
+.navbar li:last-child {
+    box-shadow: none;
+    padding-bottom: 20px;
+}
+
+#toggle {
+    display: none;
+}
+
+#toggle:checked + ul {
+    display: block;
+    float: right;
+    text-align: right;
+    padding-top: 55px;
+}
+
 .content {
     min-height: 516px;
     position: relative;
