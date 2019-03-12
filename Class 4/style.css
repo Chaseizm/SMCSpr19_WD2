@@ -95,10 +95,37 @@ label {
     height: 300px;
 }
 
-#jkrOverlap {
-    top: -45px;
-    left: -131px;
+.img5 {
+    background-image: url(assets/look1.jpg);
+    width: 100%;
+    height: 600px;
     background-size: cover;
+    background-position: top;
+}
+
+.img6 {
+    background-image: url(assets/look2.jpg);
+    width: 100%;
+    height: 600px;
+}
+
+.img7 {
+    background-image: url(assets/look3.jpg);
+    width: 100%;
+    height: 600px;
+}
+
+.img8 {
+    background-image: url(assets/look8.jpg);
+    width: 100%;
+    height: 300px;
+}
+
+#jkrOverlap {
+    bottom: -145px;
+    left: 150px;
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 
 #jkrTitle {
@@ -112,9 +139,3 @@ label {
     letter-spacing: 30px;
 }
 
-.img5 {
-    background-image: url(assets/5.jpg);
-    width: 100%;
-    height: 600px;
-    top: 86px;
-}
