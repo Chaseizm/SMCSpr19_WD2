@@ -1,0 +1,51 @@
+.content p {
+    width: 300px;
+    margin: auto;
+    padding: 50px;
+    text-align: justify;
+}
+
+#vertAlighInline img {
+    max-width: 400px;
+    display: block;
+    margin: auto;
+}
+
+.content2 {
+    background-color: whitesmoke;
+    position: relative;
+    height: 496.94px;
+}
+
+.knownimage {
+    background-image: url(assets/3.jpg);
+    height: 600px;
+    width: 400px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    margin-left: -200px;
+    margin-top: -250px;
+    top: 50%;
+    left: 50%;
+}
+
+.content3 {
+    background-color: whitesmoke;
+    position: relative;
+    height: 700px;
+}
+
+.content4 {
+    background-color: whitesmoke;
+    position: relative;
+    height: 1000px;
+}
+
+.content4 img {
+    max-width: 80%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
