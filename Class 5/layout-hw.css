@@ -19,12 +19,6 @@ body {
     background-color: red;
     position: relative;
 }
-#Lorem1 {
-    position: absolute;
-    top: 50%;
-}
-
-
 
 .clearfix {
     clear: both;
@@ -126,9 +120,6 @@ body {
         width: 100%
     }
 
-    .content #jkrTitle {
-        left: 50px;
-    }
 
 }
 
