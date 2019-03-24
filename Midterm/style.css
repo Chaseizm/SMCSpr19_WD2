@@ -33,7 +33,7 @@ label {
     text-align: right;
     z-index: 100;
     position: absolute;
-    top: 10%;
+    top: 9%;
     width: 100%;
     background-color: rgba(134, 134, 134, 0.5)
 }
@@ -70,6 +70,7 @@ label {
 
 .container {
     margin: auto;
+    min-width: 414px;
 }
 
 .clearfix {
