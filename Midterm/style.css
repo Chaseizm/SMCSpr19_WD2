@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed');
+@import url('https://fonts.googleapis.com/css?family=Caveat');
+body {
+    margin: 0px;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+label {
+    font-size: 25px;
+    line-height: 55px;
+    float: right;
+    margin-right: 20px;
+}
+
+.navbar #logo {
+    font-size: 25px;
+    margin-left: 22px;
+    float: left;
+    margin-top: 10px;
+    letter-spacing: 7px;
+    text-shadow: none;
+    font-weight: 600;
+    color: black;
+}
+
+#toggle {
+    display: none;
+}
+
+#toggle:checked + ul {
+    display: block;
+    clear: both;
+    text-align: right;
+    z-index: 100;
+    position: absolute;
+    top: 10%;
+    width: 100%;
+    background-color: rgba(134, 134, 134, 0.5)
+}
+
+#toggle:checked + ul:nth-child(2nd) {
+    background-color: #33523f;
+}
+
+.navbar {
+    width: 100%;
+    padding-top: 10px;
+}
+
+.navbar a {
+    font-size: 17px;
+    text-decoration: none;
+    color: rgb(253, 251, 251);
+    line-height: 38px;
+    letter-spacing: 3.5px;
+    padding-right: 14%;
+    text-shadow: 1px 1px 6px rgb(37, 37, 37);
+}
+
+.navbar ul {
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+    text-align: center;
+    display: none;
+}
+
+.navbar li:first-child {
+    padding-top: 5px;
+}
+.navbar li:last-child {
+    box-shadow: none;
+}
+
+.container {
+    margin: auto;
+}
+
+
+.content {
+    background-color: rgb(140, 194, 104);
+    position: relative;
+}
+
+.clearfix {
+    clear: both;
+}
+
+.landingimg {
+    background-image: url(assets/img1.jpg);
+    width: 100%;
+    min-height: 285px;
+    background-repeat: no-repeat;
+    clear: both;
+    background-size: cover;
+    background-position: top;
+    position: absolute;
+    top: 10%;
+}
+
+.landingimg p {
+    font-family: 'Caveat', cursive;
+    font-size: 30px;
+    color: #ffffff;
+    position: relative;
+    text-align: justify;
+    top: -16px;
+    left: 29px;
+    letter-spacing: 1.2px;
+    display: inline-block;
+    line-height: 25px;
+    padding: 10px;
+    text-shadow: 2px 2px 8px #33523f;
+}
+
+.stillbox {
+    border: 2px solid #f9fffb;
+    position: absolute;
+    top: 39%;
+    height: 115px;
+    width: 115px;
+    left: 13%;
+    text-shadow: 2px 2px 8px #33523f;
+}
+
+#rotate {
+    transform: rotate(-15deg);
+}
+
+.clearbox {
+    height: 335px;
+}
+
+.block-1 {
+    padding: 15px;
+    margin: auto;
+}
+
+.about, .aboutpar {
+    display: inline-block;
+}
+.about {
+    width: 25%;
+    position: absolute;
+    margin-left: -50px;
+    top: 56%;
+}
+.aboutpar {
+    width: 80%;
+    min-height: 250px;
+    letter-spacing: 1.2px;
+    position: relative;
+    top: 53%;
+    left: 10%;
+    margin-bottom: 20px;
+}
+
+.aboutpar h1 {
+    font-size: 22px;
+    margin-bottom: 40px;
+    margin-top: 35px;
+}
+
+.footerimg {
+    background-image: url(assets/img7.jpg);
+    height: 250px;
+    clear: both;
+    background-size: contain;
+    filter: brightness(150%);
+}
+
+#saturationdown {
+    filter: saturate(80%);
+}
