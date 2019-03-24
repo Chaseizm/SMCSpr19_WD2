@@ -116,10 +116,10 @@ label {
 .stillbox {
     border: 2px solid #f9fffb;
     position: absolute;
-    top: 39%;
+    top: 42%;
     height: 115px;
     width: 115px;
-    left: 13%;
+    left: 19%;
     text-shadow: 2px 2px 8px #33523f;
 }
 
@@ -134,25 +134,38 @@ label {
 .block-1 {
     padding: 15px;
     margin: auto;
+    width: 384px;
 }
 
 .about, .aboutpar {
     display: inline-block;
 }
 .about {
-    width: 25%;
-    position: absolute;
-    margin-left: -50px;
-    top: 56%;
+    width: 15%;
 }
+.about .sidetext {
+    width: 140px;
+}
+.about .sidetext h1 {
+    font-size: 21px;
+    transform: rotate(-90deg);
+    position: absolute;
+    left: -14%;
+    top: 64%;
+    letter-spacing: 2.5px;
+}
+.about svg {
+    visibility: hidden;
+}
+
 .aboutpar {
-    width: 80%;
+    width: 70%;
     min-height: 250px;
-    letter-spacing: 1.2px;
-    position: relative;
-    top: 53%;
-    left: 10%;
+    letter-spacing: 1.5px;
+    line-height: 23px;
     margin-bottom: 20px;
+    margin: 0px auto;
+    margin-top: 31px;
 }
 
 .aboutpar h1 {
@@ -161,12 +174,33 @@ label {
     margin-top: 35px;
 }
 
+.reslinkbox {
+    padding-left: 44px;
+}
+.reslinkbox p {
+    font-size: 18px;
+    letter-spacing: 1.5px;
+    line-height: 23px;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.reslinkbox a {
+    background-color: #33523f;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 600;
+    margin-left: 5px;
+}
+
 .footerimg {
     background-image: url(assets/img7.jpg);
-    height: 250px;
+    height: 190px;
     clear: both;
-    background-size: contain;
-    filter: brightness(150%);
+    background-size: cover;
+    background-position: center;
 }
 
 #saturationdown {
