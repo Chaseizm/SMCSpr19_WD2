@@ -38,10 +38,6 @@ label {
     background-color: rgba(134, 134, 134, 0.5)
 }
 
-#toggle:checked + ul:nth-child(2nd) {
-    background-color: #33523f;
-}
-
 .navbar {
     width: 100%;
     padding-top: 10px;
@@ -76,12 +72,6 @@ label {
     margin: auto;
 }
 
-
-.content {
-    background-color: rgb(140, 194, 104);
-    position: relative;
-}
-
 .clearfix {
     clear: both;
 }
@@ -94,8 +84,6 @@ label {
     clear: both;
     background-size: cover;
     background-position: top;
-    position: absolute;
-    top: 10%;
 }
 
 .landingimg p {
@@ -108,7 +96,7 @@ label {
     left: 29px;
     letter-spacing: 1.2px;
     display: inline-block;
-    line-height: 25px;
+    line-height: 27px;
     padding: 10px;
     text-shadow: 2px 2px 8px #33523f;
 }
@@ -116,7 +104,7 @@ label {
 .stillbox {
     border: 2px solid #f9fffb;
     position: absolute;
-    top: 42%;
+    top: 26.5%;
     height: 115px;
     width: 115px;
     left: 19%;
@@ -150,8 +138,8 @@ label {
     font-size: 21px;
     transform: rotate(-90deg);
     position: absolute;
-    left: -14%;
-    top: 64%;
+    left: -50px;
+    top: 61%;
     letter-spacing: 2.5px;
 }
 .about svg {
@@ -165,7 +153,6 @@ label {
     line-height: 23px;
     margin-bottom: 20px;
     margin: 0px auto;
-    margin-top: 31px;
 }
 
 .aboutpar h1 {
