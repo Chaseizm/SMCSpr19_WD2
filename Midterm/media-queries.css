@@ -127,7 +127,7 @@
     }
 
     .footerimg {
-        height: 280px;
+        height: 100px;
         clear: both;
         background-size: cover;
         background-position: center;
@@ -310,7 +310,7 @@
     }
 
     .footerimg {
-        height: 280px;
+        height: 100px;
         clear: both;
         background-size: cover;
         background-position: center;
@@ -490,9 +490,12 @@
     }
     
     .footerimg {
-        height: 280px;
+        height: 100px;
         clear: both;
         background-size: cover;
         background-position: center;
     }
 }
+
+
+ /***************************** MENU PAGE **********************/

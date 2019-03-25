@@ -188,14 +188,10 @@ label {
 
 .footerimg {
     background-image: url(assets/img7.jpg);
-    height: 190px;
+    height: 100px;
     clear: both;
     background-size: cover;
     background-position: center;
-}
-
-#saturationdown {
-    filter: saturate(80%);
 }
 
 /********************************* MENU PAGE *********************/
@@ -205,27 +201,59 @@ label {
     margin: 0 auto;
 }
 
-.menuimg {
-    background-image: url(assets/img4.jpg);
+.pastaimg {
+    background-image: url(assets/img13.jpg);
     width: 100%;
     min-height: 250px;
     background-repeat: no-repeat;
     clear: both;
     background-size: cover;
     background-position: top;
+    filter: brightness(108%);
+}
+.pizzaimg {
+    background-image: url(assets/img12.jpg);
+    width: 100%;
+    min-height: 250px;
+    background-repeat: no-repeat;
+    clear: both;
+    background-size: cover;
+    background-position: bottom;
+    filter: brightness(108%);
+}
+.secondiimg {
+    background-image: url(assets/img14.jpg);
+    width: 100%;
+    min-height: 250px;
+    background-repeat: no-repeat;
+    clear: both;
+    background-size: cover;
+    background-position: bottom;
+    filter: brightness(100%);
+}
+.cocktailsimg {
+    background-image: url(assets/img17.jpg);
+    width: 100%;
+    min-height: 250px;
+    background-repeat: no-repeat;
+    clear: both;
+    background-size: cover;
+    background-position: right;
+    filter: brightness(100%);
 }
 
 .menugrid {
-    width: 80%;
+    width: 90%;
     margin: 0px auto;
 }
 
 .menuitems {
-    width: 100%;
-    margin: 0pxx auto;
+    min-width: 300px;
+    max-width: 420px;
+    margin: 0px auto;
 }
 
-.menuimg h1{
+.pastaimg h1, .pizzaimg h1, .secondiimg h1, .cocktailsimg h1 {
     font-family: 'Caveat', cursive;
     color: white;
     font-weight: 900;
@@ -243,26 +271,32 @@ label {
     font-family: 'Caveat', cursive;
     width: 85%;
     float: left;
-    font-size: 14px;
-    letter-spacing: 2.2px;
+    font-size: 16px;
     line-height: 20px;
 }
 .descriptions .different {
     font-family: 'Roboto Condensed', sans-serif;
     font-weight: 900;
+    letter-spacing: 3.2px;
 }
 .descriptions .bottom {
     margin-bottom: 27px;
     margin-top: -10px;
     font-size: 18px;
     padding-left: 13px;
+    color: rgb(61, 61, 61);
+    letter-spacing: 1.7px;
+}
+
+.descriptions .bottom:last-child {
+    margin-bottom: 65px;
 }
 
 
 .prices {
     width: 15%;
     float: left;
-    font-size: 14px;
+    font-size: 16px;
     letter-spacing: 2.2px;
     line-height: 20px;
 }
@@ -270,4 +304,13 @@ label {
 .prices p {
     padding-bottom: 57px;
     text-align: right;
+}
+
+.footerimg2 {
+    background-image: url(assets/img15.jpg);
+    height: 100px;
+    clear: both;
+    background-size: cover;
+    background-position: center;
+    filter: brightness(108%);
 }
