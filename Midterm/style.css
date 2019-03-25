@@ -105,7 +105,7 @@ label {
 .stillbox {
     border: 2px solid #f9fffb;
     position: absolute;
-    top: 26.5%;
+    top: 190px;
     height: 115px;
     width: 115px;
     left: 19%;
@@ -139,8 +139,8 @@ label {
     font-size: 21px;
     transform: rotate(-90deg);
     position: absolute;
-    left: -50px;
-    top: 61%;
+    left: -13%;
+    top: 448px;
     letter-spacing: 2.5px;
 }
 .about svg {
