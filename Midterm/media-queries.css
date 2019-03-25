@@ -203,7 +203,7 @@
 
 
     .navbar li:last-child {
-        padding-bottom: 25px;
+        padding-bottom: 10px;
         padding-right: 28px;
     }
     #toggle:checked + ul, label{
@@ -383,7 +383,6 @@
     
     
     .navbar li:last-child {
-        padding-bottom: 25px;
         padding-right: 28px;
     }
     #toggle:checked + ul, label{
@@ -499,3 +498,9 @@
 
 
  /***************************** MENU PAGE **********************/
+ @media (min-width: 768px) {
+    .menuitems {
+        max-width: 770px;
+        margin: 0px auto;
+    }
+}

@@ -12,7 +12,7 @@ label {
     font-size: 25px;
     line-height: 55px;
     float: right;
-    margin-right: 20px;
+    margin-right: 6%;
 }
 
 .navbar #logo {
@@ -73,7 +73,7 @@ label {
 
 .container {
     margin: auto;
-    min-width: 414px;
+    width: 360px;
 }
 
 .clearfix {
@@ -124,9 +124,10 @@ label {
 }
 
 .block-1 {
-    padding: 15px;
-    margin: auto;
-    width: 384px;
+    padding-right: 0px;
+    padding-top: 15px;
+    padding-left: 15px;
+    width: 345px;
 }
 
 .about, .aboutpar {
@@ -217,6 +218,7 @@ label {
     min-height: 250px;
     background-repeat: no-repeat;
     clear: both;
+    margin-top: -20px;
     background-size: cover;
     background-position: bottom;
     filter: brightness(108%);
