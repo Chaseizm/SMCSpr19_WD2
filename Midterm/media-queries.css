@@ -130,7 +130,7 @@
         height: 100px;
         clear: both;
         background-size: cover;
-        background-position: center;
+        background-position-y: -280px;
     }
 }
 
@@ -313,7 +313,7 @@
         height: 100px;
         clear: both;
         background-size: cover;
-        background-position: center;
+        background-position-y: -280px;
     }
 }
 
@@ -492,7 +492,7 @@
         height: 100px;
         clear: both;
         background-size: cover;
-        background-position: center;
+        background-position-y: -280px;
     }
 }
 
@@ -502,5 +502,52 @@
     .menuitems {
         max-width: 770px;
         margin: 0px auto;
+    }
+
+    .prices p {
+        padding-bottom: 37px;
+        text-align: right;
+    }
+
+    .pastaimg {
+        background-image: url(assets/img13.jpg);
+        width: 100%;
+        min-height: 250px;
+        background-repeat: no-repeat;
+        clear: both;
+        background-size: cover;
+        background-position: center;
+        filter: brightness(108%);
+    }
+    .pizzaimg {
+        background-image: url(assets/img12.jpg);
+        width: 100%;
+        min-height: 250px;
+        background-repeat: no-repeat;
+        clear: both;
+        margin-top: -20px;
+        background-size: cover;
+        background-position: bottom;
+        filter: brightness(108%);
+    }
+    .secondiimg {
+        background-image: url(assets/img14.jpg);
+        width: 100%;
+        min-height: 250px;
+        background-repeat: no-repeat;
+        clear: both;
+        background-size: cover;
+        background-position: center;
+        filter: brightness(100%);
+    }
+    .cocktailsimg {
+        background-image: url(assets/img17.jpg);
+        width: 100%;
+        min-height: 250px;
+        background-repeat: no-repeat;
+        clear: both;
+        background-size: cover;
+        background-position: center;
+        filter: brightness(100%);
     }
 }
