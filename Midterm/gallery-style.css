@@ -1,12 +1,35 @@
+.gallerypageimg {
+    background-image: url(assets/img19.jpg);
+    width: 100%;
+    min-height: 285px;
+    background-repeat: no-repeat;
+    clear: both;
+    background-size: cover;
+    background-position: center;
+}
+
+.galleryfooterimg {
+    background-image: url(assets/img22.jpg);
+    height: 100px;
+    clear: both;
+    background-size: cover;
+}
+
 .gallery-container {
     margin: auto;
     margin-top: 35px;
+    width: 100%;
 }
 
 .float-section {
     min-height: 200px;
     float: left;
     width: 100%;
+}
+
+.content {
+    width: 90%;
+    margin: 5px auto;
 }
 
 .clearfix {
@@ -18,38 +41,60 @@
     background-size: contain;
 }
 
+.img1 p, .img3 p, .img5 p, .img8 p {
+    color: white;
+    font-family: 'Caveat', cursive;
+    font-size: 18px;
+    letter-spacing: 1.3px;
+    right: 8%;
+    top: 67%;
+    text-shadow: 1px 1px 8px black;
+    position: absolute;
+    line-height: 20px;
+}
+
+
+
+
 .img1 {
-    background-image: url(assets/img1.jpg);
+    background-image: url(assets/img21.jpg);
+    background-size: cover;
+    background-position: center;
 }
 
 .img2 {
-    background-image: url(assets/img2.jpg);
+    background-image: url(assets/img11.jpg);
+    background-size: cover;
+    background-position: center;
 }
 
 .img3 {
-    background-image: url(assets/img3.jpg);
+    background-image: url(assets/img12.jpg);
 }
 
 .img4 {
-    background-image: url(assets/img4.jpg);
+
+    background-image: url(assets/img9.jpg);
+    background-size: cover;
 }
 
 .img5 {
-    background-image: url(assets/img5.jpg);
+    background-image: url(assets/img13.jpg);
 }
 
 .img6 {
     background-image: url(assets/img6.jpg);
+    background-size: cover;
 }
 
 .img7 {
-    background-image: url(assets/img7.jpg);
+    background-image: url(assets/img10.jpg);
+    background-size: cover;
+    background-position: bottom;
 }
 
 .img8 {
-    background-image: url(assets/img8.jpg);
-}
-
-.img9 {
-    background-image: url(assets/img9.jpg);
+    background-image: url(assets/img3.jpg);
+    background-size: cover;
+    background-position: bottom;
 }
