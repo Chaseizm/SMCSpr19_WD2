@@ -38,7 +38,8 @@ label {
     position: absolute;
     top: 9%;
     width: 100%;
-    background-color: rgba(134, 134, 134, 0.5)
+    background-color: rgba(134, 134, 134, 0.5);
+    padding-bottom: 6px;
 }
 
 .navbar {
@@ -62,6 +63,7 @@ label {
     margin: 0px;
     text-align: center;
     display: none;
+    font-weight: 900;
 }
 
 .navbar li:first-child {
@@ -73,7 +75,7 @@ label {
 
 .container {
     margin: auto;
-    width: 360px;
+    min-width: 375px;
 }
 
 .clearfix {

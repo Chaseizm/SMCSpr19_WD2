@@ -310,7 +310,7 @@
     }
 
     .footerimg {
-        height: 100px;
+        height: 250px;
         clear: both;
         background-size: cover;
         background-position-y: -280px;
@@ -500,12 +500,12 @@
  /***************************** MENU PAGE **********************/
  @media (min-width: 768px) {
     .menuitems {
-        max-width: 770px;
+        max-width: 630px;
         margin: 0px auto;
     }
 
     .prices p {
-        padding-bottom: 37px;
+        padding-bottom: 40px;
         text-align: right;
     }
 
@@ -547,7 +547,22 @@
         background-repeat: no-repeat;
         clear: both;
         background-size: cover;
-        background-position: center;
+        background-position-y: -170px;
         filter: brightness(100%);
+    }
+
+    .descriptions .different {
+        font-family: 'Roboto Condensed', sans-serif;
+        font-weight: 900;
+        letter-spacing: 3.2px;
+        font-size: 18px;
+    }
+    .descriptions .bottom {
+        margin-bottom: 27px;
+        margin-top: -10px;
+        font-size: 20px;
+        padding-left: 13px;
+        color: rgb(61, 61, 61);
+        letter-spacing: 1.7px;
     }
 }
