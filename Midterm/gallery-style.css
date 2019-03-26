@@ -5,7 +5,6 @@
     background-repeat: no-repeat;
     clear: both;
     background-size: cover;
-    background-position: center;
 }
 
 .gallerypageimg h1 {
@@ -27,7 +26,7 @@
         position: absolute;
         background-color: whitesmoke;
         transform: rotate(-90deg);
-        top: 280px;
+        top: 283px;
         left: -0px;
     }
 }
@@ -46,10 +45,11 @@
 }
 
 .galleryfooterimg {
-    background-image: url(assets/img22.jpg);
+    background-image: url(assets/img19.jpg);
     height: 100px;
     clear: both;
     background-size: cover;
+    background-position-y: -231px;
 }
 
 .gallery-container {
@@ -103,15 +103,16 @@
 }
 
 .img2 {
-    background-image: url(assets/img11.jpg);
-    background-size: cover;
-    background-position: center;
-}
-
-.img3 {
+    
     background-image: url(assets/img12.jpg);
     background-size: cover;
     background-position-x: -290px;
+}
+
+.img3 {
+    background-image: url(assets/img11.jpg);
+    background-size: cover;
+    background-position: center;
 }
 
 .img4 {
@@ -135,6 +136,7 @@
   
     background-image: url(assets/img6.jpg);
     background-size: cover;
+    background-position-x: -70px;
 }
 
 .img8 {
@@ -184,6 +186,54 @@
         min-height: 350px;
         margin: 5px;
     }
+}
 
+/******** LARGE SCREENS **********/
+@media (min-width: 992px) {
+    .gallery-container {
+        width: 990px;
+    }
+
+    .large-width-25 {
+        width: 25%;
+    }
+
+    .large-width-33 {
+        width: 33.333%;
+    }
+
+    .large-width-50 {
+        width: 50%;
+    }
+
+    .large-width-66 {
+        width: 66.666%;
+    }
+
+    .large-width-75 {
+        width: 75%;
+    }
+
+    .large-width-100 {
+        width: 100%;
+    }
+
+    .img2 {
+        background-size: cover;
+        background-position: center;
+    }
+    .img8 {
+        background-position: bottom;
+    }
+    .gallerypageimg {
+        background-image: url(assets/img19.jpg);
+        width: 100%;
+        min-height: 285px;
+        margin-top: -20px;
+        background-repeat: no-repeat;
+        clear: both;
+        background-size: cover;
+        background-position-y: -80px;
+    }
 
 }

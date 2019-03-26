@@ -52,7 +52,7 @@ label {
     text-decoration: none;
     color: rgb(253, 251, 251);
     line-height: 38px;
-    letter-spacing: 3.5px;
+    letter-spacing: 2.9px;
     padding-right: 14%;
     text-shadow: 1px 1px 6px rgb(37, 37, 37);
 }
@@ -154,7 +154,7 @@ label {
 }
 
 .aboutpar {
-    width: 70%;
+    width: 80%;
     min-height: 250px;
     letter-spacing: 1.5px;
     line-height: 23px;
@@ -186,7 +186,9 @@ label {
     border-radius: 5px;
     text-decoration: none;
     font-weight: 600;
-    margin-left: 5px;
+    display: inline-block;
+    margin-top: 15px;
+    margin-right: -65px;
 }
 
 .footerimg {
