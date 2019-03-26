@@ -1,17 +1,39 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto+Condensed');
+
+.gallery-container {
+    margin: auto;
+    margin-top: 35px;
+    width: 100%;
+}
+
+.float-section {
+    min-height: 350px;
+    float: left;
+    width: 100%;
+}
+
+.content {
+    width: 90%;
+    margin: 5px auto;
+}
+
+.clearfix {
+    clear: both;
+}
+
 /******* SMALL SCREENS ***********/
 @media (min-width: 450px) {
 
     .small-width-25 {
-        width: 25%
+        width: 25%;
     }
 
     .small-width-33 {
-        width: 33.333%
+        width: 33.333%;
     }
 
     .small-width-50 {
-        width: 50%
+        width: 50%;
     }
 
     .small-width-66 {
@@ -19,39 +41,43 @@
     }
 
     .small-width-75 {
-        width: 75%
+        width: 75%;
     }
 
     .small-width-100 {
-        width: 100%
+        width: 100%;
     }
 }
 
 /******** MEDIUM SCREENS **********/
 @media (min-width: 768px) {
 
+    .gallery-container {
+        width: 760px;
+    }
+
     .med-width-25 {
-        width: 25%
+        width: 25%;
     }
 
     .med-width-33 {
-        width: 33.333%
+        width: 33.333%;
     }
 
     .med-width-50 {
-        width: 50%
+        width: 50%;
     }
 
     .med-width-66 {
-        width: 66.666%
+        width: 66.666%;
     }
 
     .med-width-75 {
-        width: 75%
+        width: 75%;
     }
 
     .med-width-100 {
-        width: 100%
+        width: 100%;
     }
 
 
@@ -61,27 +87,27 @@
 @media (min-width: 992px) {
 
     .large-width-25 {
-        width: 25%
+        width: 25%;
     }
 
     .large-width-33 {
-        width: 33.333%
+        width: 33.333%;
     }
 
     .large-width-50 {
-        width: 50%
+        width: 50%;
     }
 
     .large-width-66 {
-        width: 66.666%
+        width: 66.666%;
     }
 
     .large-width-75 {
-        width: 75%
+        width: 75%;
     }
 
     .large-width-100 {
-        width: 100%
+        width: 100%;
     }
 
 
@@ -91,27 +117,23 @@
 @media (min-width: 1200px) {
 
     .large-width-25 {
-        width: 25%
+        width: 25%;
     }
 
     .large-width-33 {
-        width: 33.333%
+        width: 33.333%;
     }
 
     .large-width-50 {
-        width: 50%
+        width: 50%;
     }
 
     .large-width-66 {
-        width: 66.666%
+        width: 66.666%;
     }
 
     .large-width-75 {
-        width: 75%
-    }
-
-    .large-width-100 {
-        width: 100%
-    }
+        width: 75%;
+}
 
 }

@@ -36,7 +36,7 @@ label {
     text-align: right;
     z-index: 100;
     position: absolute;
-    top: 9%;
+    top: 65px;
     width: 100%;
     background-color: rgba(134, 134, 134, 0.5);
     padding-bottom: 6px;
@@ -225,6 +225,17 @@ label {
     background-position: bottom;
     filter: brightness(108%);
 }
+.pizzaimg p {
+    display: inline-block;
+    letter-spacing: 3px;
+    font-size: 20px;
+    position: absolute;
+    background-color: whitesmoke;
+    transform: rotate(-90deg);
+    top: 167px;
+    left: 4px;
+}
+
 .secondiimg {
     background-image: url(assets/img14.jpg);
     width: 100%;
@@ -263,7 +274,7 @@ label {
     font-weight: 900;
     font-size: 30px;
     text-align: right;
-    right: 8%;
+    right: 3%;
     top: 200px;
     letter-spacing: 5px;
     position: relative;

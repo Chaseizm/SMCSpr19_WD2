@@ -547,7 +547,7 @@
         background-repeat: no-repeat;
         clear: both;
         background-size: cover;
-        background-position-y: -170px;
+        background-position-y: -200px;
         filter: brightness(100%);
     }
 
@@ -566,3 +566,5 @@
         letter-spacing: 1.7px;
     }
 }
+
+ /***************************** GALLERY GRID PAGE **********************/

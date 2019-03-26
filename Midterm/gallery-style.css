@@ -8,6 +8,43 @@
     background-position: center;
 }
 
+.gallerypageimg h1 {
+    display: inline-block;
+    letter-spacing: 3px;
+    font-size: 20px;
+    position: absolute;
+    background-color: whitesmoke;
+    transform: rotate(-90deg);
+    top: 260px;
+    left: -5px;
+}
+
+@media (min-width: 760px) {
+    .gallerypageimg h1 {
+        display: inline-block;
+        letter-spacing: 3px;
+        font-size: 20px;
+        position: absolute;
+        background-color: whitesmoke;
+        transform: rotate(-90deg);
+        top: 280px;
+        left: -0px;
+    }
+}
+
+@media (min-width: 900px) {
+    .gallerypageimg h1 {
+        display: inline-block;
+        letter-spacing: 3px;
+        font-size: 20px;
+        position: absolute;
+        background-color: whitesmoke;
+        transform: rotate(-90deg);
+        top: 309px;
+        left: -0px;
+    }
+}
+
 .galleryfooterimg {
     background-image: url(assets/img22.jpg);
     height: 100px;
@@ -17,18 +54,19 @@
 
 .gallery-container {
     margin: auto;
-    margin-top: 35px;
+    margin-top: 30px;
+    margin-bottom: 30px;
     width: 100%;
 }
 
 .float-section {
-    min-height: 200px;
+    min-height: 350px;
     float: left;
     width: 100%;
 }
 
 .content {
-    width: 90%;
+    width: 100%;
     margin: 5px auto;
 }
 
@@ -37,20 +75,22 @@
 }
 
 .img1, .img2, .img3, .img4, .img5, .img6, .img7, .img8, .img9 {
-    min-height: 200px;
-    background-size: contain;
+    min-height: 350px;
+    margin: 5px 10px;
 }
 
-.img1 p, .img3 p, .img5 p, .img8 p {
+.img1 p, .img4 p, .img5 p, .img9 p {
     color: white;
     font-family: 'Caveat', cursive;
-    font-size: 18px;
+    font-size: 20px;
     letter-spacing: 1.3px;
-    right: 8%;
-    top: 67%;
+    top: 160px;
+    left: 16px;
+    display: inline;
     text-shadow: 1px 1px 8px black;
-    position: absolute;
-    line-height: 20px;
+    position: relative;
+    line-height: 308px;
+    font-weight: 900;
 }
 
 
@@ -70,6 +110,8 @@
 
 .img3 {
     background-image: url(assets/img12.jpg);
+    background-size: cover;
+    background-position-x: -290px;
 }
 
 .img4 {
@@ -80,21 +122,68 @@
 
 .img5 {
     background-image: url(assets/img13.jpg);
+    background-size: cover;
 }
 
 .img6 {
-    background-image: url(assets/img6.jpg);
+    background-image: url(assets/img10.jpg);
     background-size: cover;
+    background-position: bottom;  
 }
 
 .img7 {
-    background-image: url(assets/img10.jpg);
+  
+    background-image: url(assets/img6.jpg);
     background-size: cover;
-    background-position: bottom;
 }
 
 .img8 {
     background-image: url(assets/img3.jpg);
     background-size: cover;
+}
+
+.img9 {
+    background-image: url(assets/img14.jpg);
+    background-size: cover;
     background-position: bottom;
+}
+
+
+/******** MEDIUM SCREENS **********/
+@media (min-width: 768px) {
+
+    .gallery-container {
+        width: 730px;
+    }
+
+    .med-width-25 {
+        width: 25%;
+    }
+
+    .med-width-33 {
+        width: 33.333%;
+    }
+
+    .med-width-50 {
+        width: 50%;
+    }
+
+    .med-width-66 {
+        width: 66.666%;
+    }
+
+    .med-width-75 {
+        width: 75%;
+    }
+
+    .med-width-100 {
+        width: 100%;
+    }
+
+    .img1, .img2, .img3, .img4, .img5, .img6, .img7, .img8, .img9 {
+        min-height: 350px;
+        margin: 5px;
+    }
+
+
 }
