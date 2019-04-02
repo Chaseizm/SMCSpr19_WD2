@@ -28,13 +28,19 @@
         padding-top: 15px;
     }
 
+    .navbar a {
+        font-size: 27px;
+    line-height: 45px;
+    letter-spacing: 3.5px;
+    }
+
 
     .navbar li:first-child {
         padding-top: 20px;
     }
 
     .navbar li:last-child {
-        padding-bottom: 20px;
+        padding-bottom: 10px;
     }
     #toggle:checked + ul {
         display: block;
@@ -44,7 +50,7 @@
         position: absolute;
         top: 9.25%;
         width: 100%;
-        background-color: rgba(134, 134, 134, 0.5);
+        background-color: rgba(48, 71, 62, 0.5);
     }
 
     .landingimg {
@@ -63,18 +69,18 @@
         top: 325px;
         height: 150px;
         width: 150px;
-        left: 19%;
+        left: 20%;
         text-shadow: 2px 2px 8px #33523f;
     }
 
     .landingimg p {
-        font-size: 35px;
+        font-size: 45px;
         color: #ffffff;
         position: relative;
         text-align: justify;
-        top: -33px;
-        left: 41px;
-        letter-spacing: 3.2px;
+        top: -43px;
+        left: 21px;
+        letter-spacing: 3px;
         display: inline-block;
         line-height: 41px;
         padding: 10px;
@@ -112,7 +118,7 @@
         line-height: 23px;
         text-align: right;
         margin-bottom: 60px;
-        padding-right: 40px;
+        padding-right: 80px;
     }
 
     .reslinkbox a {
@@ -131,7 +137,18 @@
         height: 100px;
         clear: both;
         background-size: cover;
-        background-position-y: -280px;
+        background-position: top center;
+    }
+
+    .cocktailsimg {
+        background-image: url(assets/img17.jpg);
+        width: 100%;
+        min-height: 250px;
+        background-repeat: no-repeat;
+        clear: both;
+        background-size: cover;
+        background-position-y: -150px;
+        filter: brightness(100%);
     }
 }
 
@@ -191,17 +208,17 @@
     .navbar {
         padding-top: 20px;
     }
-    
+
     .navbar a {
-        font-size: 16px;
+        font-size: 24px;
+        font-family: 'Caveat', cursive;
         text-decoration: none;
         color: black;
-        line-height: 44px;
-        letter-spacing: 3.5px;
+        line-height: 38px;
+        letter-spacing: 3.1px;
         padding-right: 14%;
         text-shadow: none;
     }
-
 
     .navbar li:last-child {
         padding-bottom: 10px;
@@ -212,7 +229,7 @@
     }
 
     .navbar ul {
-        display: inline-block;
+        display: block;
         width: 100%;
         text-align: right;
     }
@@ -246,24 +263,19 @@
     }
 
     .landingimg p {
-        font-size: 34px;
+        font-size: 45px;
         color: #ffffff;
         position: relative;
         text-align: justify;
-        top: -3px;
-        left: 67px;
+        top: -17px;
+        left: 43px;
         letter-spacing: 3.5px;
         display: inline-block;
-        line-height: 36px;
+        line-height: 39px;
         padding: 10px;
-        text-shadow: 2px 2px 8px #33523f;
+        text-shadow: 0px 0px 8px #33523f;
     }
-
-    .block-1 {
-        padding-top: 60px;
-        margin: auto;
-        width: 930px;
-    }
+    
 
     .about .sidetext h1 {
         font-size: 22px;
@@ -316,7 +328,19 @@
         background-size: cover;
         background-position-y: -280px;
     }
-}
+
+    .pizzaimg p {
+        display: inline-block;
+        letter-spacing: 3px;
+        font-size: 25px;
+        position: absolute;
+        background-color: rgba(36, 75, 36, 0.8);
+        transform: rotate(-90deg);
+        top: 120px;
+        left: 4px;
+        padding: 5px 15px;
+        color: whitesmoke;
+    }
 
 /******** X-LARGE SCREENS **********/
 @media (min-width: 1200px) {
@@ -360,7 +384,7 @@
     }
         
     .navbar #logo {
-        font-size: 25px;
+        font-size: 30px;
         margin-left: 31px;
         float: left;
         position: absolute;
@@ -373,7 +397,7 @@
     }
         
     .navbar a {
-        font-size: 16px;
+        font-size: 25px;
         text-decoration: none;
         color: black;
         line-height: 44px;
@@ -510,6 +534,10 @@
         text-align: right;
     }
 
+    .pastaimg h1, .pizzaimg h1, .secondiimg h1, .cocktailsimg h1 {
+        right: 4%;
+    }
+
     .pastaimg {
         background-image: url(assets/img13.jpg);
         width: 100%;
@@ -556,16 +584,15 @@
         font-family: 'Roboto Condensed', sans-serif;
         font-weight: 900;
         letter-spacing: 3.2px;
-        font-size: 18px;
+        font-size: 19px;
     }
     .descriptions .bottom {
         margin-bottom: 27px;
         margin-top: -10px;
-        font-size: 20px;
+        font-size: 21px;
         padding-left: 13px;
         color: rgb(61, 61, 61);
         letter-spacing: 1.7px;
     }
 }
-
- /***************************** GALLERY GRID PAGE **********************/
+}

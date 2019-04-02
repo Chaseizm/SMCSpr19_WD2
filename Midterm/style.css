@@ -16,6 +16,7 @@ label {
 }
 
 .navbar #logo {
+    font-family: 'Roboto Condensed', sans-serif;
     font-size: 25px;
     margin-left: 22px;
     float: left;
@@ -38,7 +39,7 @@ label {
     position: absolute;
     top: 65px;
     width: 100%;
-    background-color: rgba(134, 134, 134, 0.5);
+    background-color: rgba(48, 71, 62, 0.5);
     padding-bottom: 6px;
 }
 
@@ -48,7 +49,8 @@ label {
 }
 
 .navbar a {
-    font-size: 17px;
+    font-size: 22px;
+    font-family: 'Caveat', cursive;
     text-decoration: none;
     color: rgb(253, 251, 251);
     line-height: 38px;
@@ -154,7 +156,7 @@ label {
 }
 
 .aboutpar {
-    width: 80%;
+    width: 77%;
     min-height: 250px;
     letter-spacing: 1.5px;
     line-height: 23px;
@@ -169,18 +171,18 @@ label {
 }
 
 .reslinkbox {
-    padding-left: 44px;
+    padding-left: 80px;
 }
 .reslinkbox p {
     font-size: 18px;
     letter-spacing: 1.5px;
     line-height: 23px;
     text-align: center;
-    margin-bottom: 60px;
+    margin-bottom: 35px;
 }
 
 .reslinkbox a {
-    background-color: #33523f;
+    background-color: #264830;
     color: white;
     padding: 10px 20px;
     border-radius: 5px;
@@ -188,15 +190,28 @@ label {
     font-weight: 600;
     display: inline-block;
     margin-top: 15px;
-    margin-right: -65px;
+    margin-right: -42px;
 }
 
 .footerimg {
-    background-image: url(assets/img7.jpg);
+    background-image: url(assets/img23.jpg);
     height: 100px;
     clear: both;
     background-size: cover;
-    background-position-y: -395px;
+    filter: saturate(80%);
+}
+
+.footerimg p, .footerimg2 p, .galleryfooterimg p {
+    color: whitesmoke;
+    text-shadow: 0px 0px 8px black;
+    text-align: center;
+    letter-spacing: 1.5px;
+    font-weight: 600;
+}
+
+.footerimg p:first-child, .footerimg2 p:first-child, .galleryfooterimg p:first-child {
+    padding-top: 25px;
+    margin-bottom: -5px;
 }
 
 /********************************* MENU PAGE *********************/
@@ -219,7 +234,7 @@ label {
 .pizzaimg {
     background-image: url(assets/img12.jpg);
     width: 100%;
-    min-height: 250px;
+    height: 250px;
     background-repeat: no-repeat;
     clear: both;
     margin-top: -20px;
@@ -232,10 +247,12 @@ label {
     letter-spacing: 3px;
     font-size: 20px;
     position: absolute;
-    background-color: whitesmoke;
+    background-color: rgba(36, 75, 36, 0.8);
     transform: rotate(-90deg);
-    top: 167px;
+    top: 140px;
     left: 4px;
+    padding: 5px 15px;
+    color: whitesmoke;
 }
 
 .secondiimg {
@@ -255,7 +272,7 @@ label {
     background-repeat: no-repeat;
     clear: both;
     background-size: cover;
-    background-position: right;
+    background-position-y: -50px;
     filter: brightness(100%);
 }
 
@@ -274,13 +291,13 @@ label {
     font-family: 'Caveat', cursive;
     color: white;
     font-weight: 900;
-    font-size: 30px;
+    font-size: 37px;
     text-align: right;
-    right: 3%;
-    top: 200px;
+    right: 6%;
+    top: 184px;
     letter-spacing: 5px;
     position: relative;
-    text-shadow: 1px 2px 8px black;
+    text-shadow: 0px 0px 8px black;
 }
 
 
@@ -299,10 +316,11 @@ label {
 .descriptions .bottom {
     margin-bottom: 27px;
     margin-top: -10px;
-    font-size: 18px;
+    min-width: 293px;
+    font-size: 21px;
     padding-left: 13px;
     color: rgb(61, 61, 61);
-    letter-spacing: 1.7px;
+    letter-spacing: 1.6px;
 }
 
 .descriptions .bottom:last-child {
@@ -316,6 +334,7 @@ label {
     font-size: 16px;
     letter-spacing: 2.2px;
     line-height: 20px;
+    padding-top: 2px;
 }
 
 .prices p {
@@ -324,10 +343,9 @@ label {
 }
 
 .footerimg2 {
-    background-image: url(assets/img15.jpg);
+    background-image: url(assets/img23.jpg);
     height: 100px;
     clear: both;
     background-size: cover;
-    background-position: center;
-    filter: brightness(108%);
+    filter: saturate(80%);
 }
