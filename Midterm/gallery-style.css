@@ -142,10 +142,8 @@
 }
 
 .img7 {
-  
     background-image: url(assets/img6.jpg);
     background-size: cover;
-    background-position-x: -140px;
 }
 
 .img8 {
@@ -204,6 +202,12 @@
         clear: both;
         background-size: cover;
         background-position-y: -340px;
+    }
+
+    .img7 {
+        background-image: url(assets/img6.jpg);
+        background-size: cover;
+        background-position-x: -140px;
     }
 }
 
