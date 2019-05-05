@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Javascript 2</title>
+</head>
+<body>
+
+    <header>
+        <img id="Logo" src="https://www.designhill.com/design-blog/wp-content/uploads/2017/09/7-min-5.jpg" alt="brand logo">
+    </header>
+
+    <main>
+        <div class="buttons">
+            <button id="logoSwitch">Switch the Logo!</button>
+        </div>
+    </main>
+
+
+    <footer></footer>
+
+
+
+
+
+
+    <script>
+
+        
+        
+        var switchLogo = function(){
+            var imgCurrentSrc = document.getElementById('Logo').src;
+
+            var src1 = 'https://www.designhill.com/design-blog/wp-content/uploads/2017/09/7-min-5.jpg';
+            var src2 = 'https://www.broudys.com/images/products/img6988.jpg';
+
+            if(imgCurrentSrc === src1){
+                document.getElementById('Logo').src = src2;
+            }
+            else {
+                document.getElementById('Logo').src = src1;
+            }
+
+        }
+
+        document.getElementById('logoSwitch').addEventListener('click', switchLogo);
+
+    </script>
+
+
+    
+</body>
+</html>

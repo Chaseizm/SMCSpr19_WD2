@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>HOMEWORKKKK</title>
+</head>
+<body>
+
+    <header>
+        <img id="blackSharpie" src="https://static2.jetpens.com/images/a/000/079/79255.jpg?ba=middle%2Ccenter&balph=3&blend64=aHR0cDovL3d3dy5qZXRwZW5zLmNvbS9pbWFnZXMvYXNzZXRzL3dhdGVybWFyazIucG5n&bm=difference&bs=inherit&mark64=aHR0cDovL3d3dy5qZXRwZW5zLmNvbS9pbWFnZXMvYXNzZXRzL3dhdGVybWFyazEucG5n&markalign=top%2Cright&markalpha=30&markscale=16&q=90&s=eb162f369a16a086742d5188857200d6" width="500px">
+    </header>
+        
+    <main>
+        <div class="buttons">
+            <button id="changeButton">Change Image</button>
+        </div>
+    </main>
+
+
+
+
+    <script>
+        var changeImage = function(){
+            var srcCurrent = document.getElementById("blackSharpie").src;
+
+            var src1 = "https://static2.jetpens.com/images/a/000/079/79255.jpg?ba=middle%2Ccenter&balph=3&blend64=aHR0cDovL3d3dy5qZXRwZW5zLmNvbS9pbWFnZXMvYXNzZXRzL3dhdGVybWFyazIucG5n&bm=difference&bs=inherit&mark64=aHR0cDovL3d3dy5qZXRwZW5zLmNvbS9pbWFnZXMvYXNzZXRzL3dhdGVybWFyazEucG5n&markalign=top%2Cright&markalpha=30&markscale=16&q=90&s=eb162f369a16a086742d5188857200d6";
+            var src2 = "https://images.uline.com/is/image//content/dam/images/H/H0500/H-286R.jpg?$MediumRHD$&iccEmbed=1&icc=AdobeRGB";
+
+            if (srcCurrent === src1){
+                document.getElementById("blackSharpie").src = src2;
+            }
+            else {
+                document.getElementById("blackSharpie").src = src1;
+            }
+
+            
+        }
+        document.getElementById("changeButton").addEventListener("click", changeImage);
+
+    </script>
+
+
+
+</body>
+</html>

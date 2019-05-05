@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>HOMEWORKKKK</title>
+</head>
+<body>
+
+    <header>
+        <h1 id="mainTitle">UGHHHHH</h1>
+    </header>
+        
+    <main>
+        <div class="buttons">
+            <button id="changeColorButton">Change Color!</button>
+        </div>
+    </main>
+
+    <script>
+        
+        var colorStatus = 1;
+
+        function changeColor(){
+            if (colorStatus == 1) {
+            document.getElementById("mainTitle").style.color = "red";
+            colorStatus = 0;
+            }
+            else if (colorStatus == 0) {
+            document.getElementById("mainTitle").style.color = "black";
+            colorStatus = 1;
+            }
+            
+
+        }
+
+
+        document.getElementById("changeColorButton").addEventListener("click", changeColor);
+
+    </script>
+
+
+
+</body>
+</html>
