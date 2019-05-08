@@ -19,8 +19,6 @@ let toggleNav = function() {
         getSidebar.style.width  = "0px";
         getSidebarTitle.style.opacity = "0";
 
-
-
         toggleNavStatus = false;
     }
 }
