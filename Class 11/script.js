@@ -11,18 +11,15 @@ let toggleNav = function() {
         getSidebar.style.width  = "180px";
         getSidebarTitle.style.opacity = "1";
 
-        
-
         toggleNavStatus = true;
     }
 
     else if (toggleNavStatus === true) {
+        getSidebarUl.style.visibility = "hidden";
         getSidebar.style.width  = "0px";
         getSidebarTitle.style.opacity = "0";
 
-        
 
-        getSidebarUl.style.visibility = "hidden";
 
         toggleNavStatus = false;
     }
