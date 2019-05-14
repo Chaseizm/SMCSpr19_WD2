@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    
+    <main>
+        <h1>The world most dangerous spiders:</h1>
+
+        <form action="" method="POST">
+            <label for="spiders"> Spider Names:</label>
+            <select name="name" id="spiderName">
+                <option value="spider1">The Brazilian Wandering Spider</option>
+                <option value="spider2">The Black Widow</option>
+                <option value="spider3">The Brown Widow</option>
+                <option value="spider4">The Brown Recluse</option>
+            </select>
+
+            <label for="spiderDe">Model</label>
+            <select name="descriptions" id="spiderDescriptions"></select>
+        </form>
+    </main>
+
+
+
+
+
+    <script>
+        var brazilian = ["It has the most neurologically active venom of all spiders, and is regarded as the most dangerous spider in the world."];
+        var black = ["These spiders are easily identified by the colored, hourglass-shaped mark on their abdomens."];
+        var brown = ["Like its cousins, it carries a neurotoxic venom which can cause a set of symptoms known as Latrodectism."];
+        var recluse = ["The bite of a Brown Recluse is extremely venomous, and has led to fatalities through massive tissue loss and the subsequent infection."];
+
+        var nameDropdown = document.getElementById("spiderName");
+        var descriptionsDropdown = document.getElementById("spiderDescriptions");
+        nameDropdown.addEventListener("change", function(){
+            
+            descriptionsDropdown.innerHTML = "";
+
+            if (this.value === "spider1") {
+                for(var i = 0 ; i < brazilian.length ; i++) {
+                descriptionsDropdown.innerHTML += '<option value="' + brazilian[i] + '">' + brazilian[i] + '</option'};
+            }
+             else if (this.value === "spider2"){
+                for(var i = 0 ; i < bmwModels.length ; i++) {
+                modelDropdown.innerHTML += '<option value="' + bmwModels[i] + '">' + bmwModels[i] + '</option'};
+
+            } else if (this.value === "spider3"){
+                for(var i = 0 ; i < mercModels.length ; i++) {
+                modelDropdown.innerHTML += '<option value="' + mercModels[i] + '">' + mercModels[i] + '</option'};
+
+            } else if (this.value === "spider4"){
+                for(var i = 0 ; i < porscheModels.length ; i++) {
+                modelDropdown.innerHTML += '<option value="' + porscheModels[i] + '">' + porscheModels[i] + '</option'};
+
+            }
+
+            
+            // <option value="">Text</option>
+
+            
+
+
+        });
+    </script>
+
+</body>
+</html>
