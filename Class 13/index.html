@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>
+        .container {
+            width: 500px;
+            height: 500px;
+            background-color: azure;
+        }
+
+        .blue-container {
+            background-color: lightskyblue;
+        }
+
+        .box {
+            width: 150px;
+            height: 150px;
+            background-color: chartreuse;
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 class="header">Hello, world!</h1>
+
+    <button id="btn1">Append Things</button>
+    <button id="btn2">Prepend Things</button>
+    <button id="btn3">Remove Addons!</button>
+    <button id="btn4">Empty container</button>
+
+    <button id="colorToggle">Switch Color!</button>
+
+    <div class="container">I am child 1
+        <div class="box"></div>
+
+    </div>
+
+
+    <form action="" method="POST">
+        <input type="text" name="name" id="myName">
+        <input type="email" name="email" id="myEmail">
+        <input type="submit" value="Submit">
+
+        <select id="FX" name="effects">
+            <option value="" default></option>
+            <option value="show">Show an element</option>
+            <option value="hide">Hide an element</option>
+            <option value="fadein">Fade it in</option>
+            <option value="fadeout">Fade it out</option>
+            <option value="slidedown">Slide it down</option>
+            <option value="slideup">Slide it up</option>
+        </select>
+
+    </form>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('body').css('background-color', 'gray');
+            $('.header').css('color', 'fefefe');
+            //document.getElementsByClassName('header')[0]
+
+
+            $('#FX').change(function(){
+                var selection = $(this).val();
+
+                if(selection === "show") {
+                    $('.box').show();
+                }
+                else if (selection === "hide"){
+                    $('.box').hide();
+                }
+                else if (selection === "fadein"){
+                    $('.box').fadeIn();
+                }
+                else if (selection === "fadeout"){
+                    $('.box').fadeOut();
+                }
+                else if (selection === "slidedown"){
+                    $('.box').slideDown();
+                }
+                else if (selection === "slideup"){
+                    $('.box').slideUp();
+                }
+            })
+
+            $('#colorToggle').click(function(){
+                $('.container').toggleClass('blue-container');
+            })
+            //toggleClass adds the class blue-container into the existing container class.
+
+
+            $('#myName').blur(function(){
+                console.log( $('#myName').val() );
+
+                if( $('#myName').val() === "Maxim") {
+                    $('#myEmail').val('safioulline_max');
+                }
+            })
+
+
+
+            $('.container').append('<div class="container-child">I am child 2</div>');
+            //append adds to the END of the container element. 
+
+            $('.container').prepend('<div class="container-child">I am child 3</div>');
+            //prepend adds to the START of the container element. 
+
+            $('.container').after('<div class="addon">I AM AFTERRRRR</div>');
+            //append and prepend will create children inside the container.
+            //after sits outside of the container AFTER.
+
+            $('.container').before('<div class="container-child">I AM BEFOREEEE</div>');
+            //before sits outside of the container AT THE BEGINNING of container.
+
+
+            $('<div class="container-child">I am child 5</div>').prependTo('.container');
+
+            $('#btn1').click(function(){
+                $('<div class="container-child">I am child 4</div>').appendTo('.container');
+                $('.container').after('<div class="addon">I AM AFTERRRRR</div>');
+            })
+
+            $('#btn2').click(function(){
+                $('.container').prepend('<div class="container-child">I am child 3</div>');
+                $('<div class="container-child">I am child 5</div>').prependTo('.container');
+            })
+
+            $('#btn3').click(function(){
+                $('.addon').remove();
+            })
+
+            $('#btn4').click(function(){
+                $('.container').empty();
+            })
+            //empty clears off all the children. you can't bring it back once you empty it.
+
+        })
+    </script>
+
+</body>
+</html>
