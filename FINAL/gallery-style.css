@@ -1,0 +1,203 @@
+
+
+.gallery-container {
+    margin: auto;
+    margin-top: 26px;
+    margin-bottom: 26px;
+    width: 100%;
+}
+
+.float-section {
+    min-height: 350px;
+    float: left;
+    width: 100%;
+}
+
+.content {
+    width: 100%;
+    margin: 5px auto;
+}
+
+.clearfix {
+    clear: both;
+}
+
+.img1, .img2, .img3, .img4, .img5, .img6, .img7, .img8, .img9 {
+    min-height: 350px;
+    margin: 5px 10px;
+}
+
+.img1 p, .img4 p, .img5 p, .img9 p, .img6 p {
+    color: white;
+    font-family: 'Caveat', cursive;
+    font-size: 27px;
+    letter-spacing: 1.3px;
+    top: 152px;
+    left: 22px;
+    display: inline;
+    text-shadow: 0px 0px 8px rgb(48,71,62);
+    position: relative;
+    line-height: 308px;
+    font-weight: 900;
+    background-color: rgba(48, 71, 62, 0.5);
+    padding: 5px 15px;
+}
+
+
+
+
+.img1 {
+    background-image: url(assets/17.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.img2 {
+    background-image: url(assets/18.jpg);
+    background-size: cover;
+    background-position: center;
+    background-position-x: -200px;
+}
+
+.img3 {
+    background-image: url(assets/9.jpg);
+    background-size: cover;
+    background-position: center;
+    background-position-y: -40px;
+}
+
+.img4 {
+
+    background-image: url(assets/15.jpg);
+    background-size: cover;
+}
+
+.img5 {
+    background-image: url(assets/8.jpg);
+    background-size: cover;
+}
+
+.img6 {
+    background-image: url(assets/14.jpg);
+    background-size: cover;
+    background-position: bottom;  
+}
+
+.img7 {
+    background-image: url(assets/10.jpg);
+    background-size: cover;
+}
+
+.img8 {
+    background-image: url(assets/3.jpg);
+    background-size: cover;
+    background-position: bottom;
+}
+
+.img9 {
+    background-image: url(assets/11.jpg);
+    background-size: cover;
+}
+
+
+/******** MEDIUM SCREENS **********/
+@media (min-width: 768px) {
+
+    .gallery-container {
+        width: 722px;
+    }
+
+    .med-width-25 {
+        width: 25%;
+    }
+
+    .med-width-33 {
+        width: 33.333%;
+    }
+
+    .med-width-50 {
+        width: 50%;
+    }
+
+    .med-width-66 {
+        width: 66.666%;
+    }
+
+    .med-width-75 {
+        width: 75%;
+    }
+
+    .med-width-100 {
+        width: 100%;
+    }
+
+    .img1, .img2, .img3, .img4, .img5, .img6, .img7, .img8, .img9 {
+        min-height: 350px;
+        margin: 5px;
+    }
+
+    .gallerypageimg {
+        background-image: url(assets/img24.jpg);
+        width: 100%;
+        height: 250px;
+        background-repeat: no-repeat;
+        clear: both;
+        background-size: cover;
+        background-position-y: -340px;
+    }
+
+    .img7 {
+        background-image: url(assets/6.jpg);
+        background-size: cover;
+    }
+}
+
+/******** LARGE SCREENS **********/
+@media (min-width: 992px) {
+    .gallery-container {
+        width: 963px;
+    }
+
+    .large-width-25 {
+        width: 25%;
+    }
+
+    .large-width-33 {
+        width: 33.333%;
+    }
+
+    .large-width-50 {
+        width: 50%;
+    }
+
+    .large-width-66 {
+        width: 66.666%;
+    }
+
+    .large-width-75 {
+        width: 75%;
+    }
+
+    .large-width-100 {
+        width: 100%;
+    }
+
+    .img2 {
+        background-size: cover;
+        background-position: center;
+    }
+    .img8 {
+        background-position: bottom;
+    }
+    .gallerypageimg {
+        background-image: url(assets/img24.jpg);
+        width: 100%;
+        min-height: 285px;
+        margin-top: -20px;
+        background-repeat: no-repeat;
+        clear: both;
+        background-size: cover;
+        background-position-y: -560px;
+    }
+
+}

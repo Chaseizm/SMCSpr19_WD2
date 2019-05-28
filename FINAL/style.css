@@ -1,0 +1,805 @@
+@import url('https://fonts.googleapis.com/css?family=Fjalla+One&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Noto+Serif+SC:400,700&display=swap');
+body {
+    margin: 0px;
+}
+
+.nav-main {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    top: 4px;
+    left: 0;
+    background-image: url(assets/19.jpg);
+    background-size: cover;
+    height: 570px;
+    background-repeat: no-repeat;
+}
+
+.nav-main a h1 {
+    font-family: 'Fjalla One', sans-serif;
+    letter-spacing: 2.7px;
+    font-size: 24px;
+    color: white;
+    font-weight: 900;
+    margin-left: 21px;
+    text-shadow: 0px 0px 10px darkred;
+}
+
+.nav-main a {
+    text-decoration: none;
+}
+
+.btn-toggle-nav {
+    width: 62%;
+    float: right;
+    text-align: right;
+    height: 40px;
+    color: white;
+    top: 7.5%;
+    font-size: 27px;
+    position: relative;
+}
+
+
+
+.nav-sidebar {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 0px;
+    height: 100%;
+    background-color: rgba(173, 200, 202, 0.89);
+    z-index: 1000;
+    transition: all .3s ease-in-out;
+}
+
+.nav-sidebar ul {
+    padding-top: 15px;
+    padding-left: 23px;
+    overflow: hidden;
+    visibility: hidden;
+    font-family: 'Fjalla One', sans-serif;
+    position: relative;
+    top: 8%;
+
+}
+
+.nav-sidebar ul li {
+    list-style: none;
+    letter-spacing: 1.3px;
+}
+
+
+
+.nav-sidebar ul li a {
+    color: black;
+}
+
+
+
+
+
+/* SUBMENU SUBMENU SUBMENU SUBMENUSUBMENUSUBMENUSUBMENU */
+
+ul {
+    padding: 0px;
+    list-style: none;
+
+}
+ul li {
+    width: 100%;
+
+}
+ul li label {
+    width: 70%;
+    display: block;
+
+}
+
+ul li ul li {
+    display: none;
+
+}
+
+
+
+
+.nav-sidebar #toggle2:checked + ul, #toggle3:checked + ul, #toggle4:checked + ul, #toggle5:checked + ul {
+    display: block;
+    z-index: 1000;
+}
+
+.nav-sidebar #toggle2:checked + ul li, #toggle3:checked + ul li, #toggle4:checked + ul li, #toggle5:checked + ul li {
+    display: block;
+    width: 74%;
+    border-bottom: 1px solid black;
+    z-index: 1000;
+    margin-left: 27px;
+    visibility: visible;
+}
+.nav-sidebar #toggle2:checked + ul li:last-child, #toggle3:checked + ul li:last-child, #toggle4:checked + ul li:last-child, #toggle5:checked + ul li:last-child {
+    border-bottom: none;
+}
+
+#toggle2:checked + ul li a , #toggle3:checked + ul li a , #toggle4:checked + ul li a , #toggle5:checked + ul li a {
+    text-decoration: none;
+    line-height: 35px;
+    text-transform: uppercase;
+    font-size: 15px;
+}
+
+.toggle2 , .toggle3 , .toggle4 , .toggle5 {
+    font-size: 25px;
+    font-weight: 900;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    color: black;
+}
+#toggle2 , #toggle3 , #toggle4 , #toggle5 {
+    position: absolute;
+    right: 10%;
+    display: none;
+}
+.arrow {
+    position: absolute;
+    right: 10%;
+    transform: rotate(-90deg);
+    color: rgb(208, 255, 0);
+    text-shadow: 0px 0px 30px rgb(97, 139, 141);
+    font-size: 27px;
+}
+
+.nav-sidebar ul li:last-child {
+    margin-bottom: 35px;
+}
+
+/* 50 years50 years50 years50 years50 years50 years50 years */
+
+.openingimg {
+    clear: both;
+    width: 100%;
+    height: 350px;
+}
+
+.openingtext .fifty {
+    font-size: 80px;
+    color: rgb(215, 250, 16);
+    font-weight: 900;
+    letter-spacing: 2px;
+    line-height: 100px;
+    position: relative;
+    width: 91%;
+    display: block;
+    margin: auto;
+    font-family: 'Fjalla One', sans-serif;
+    top: -115px;
+    text-align: left;
+}
+
+.openingtext .queer {
+    font-size: 77px;
+    color: black;
+    font-weight: 900;
+    letter-spacing: 1.5px;
+    line-height: 100px;
+    position: relative;
+    width: 91%;
+    margin: auto;
+    display: block;
+    font-family: 'Fjalla One', sans-serif;
+    top: -110px;
+    text-align: left;
+}
+
+
+.openingtext .sub {
+    font-size: 20px;
+    color: black;
+    font-weight: 900;
+    letter-spacing: 1.2px;
+    line-height: 26px;
+    position: relative;
+    display: block;
+    margin: auto;
+    width: 95%;
+    padding-left: 20px;
+    text-align: left;
+    top: -100px;
+    font-family: 'Noto Serif SC', serif;
+}
+
+#btn1 {
+    padding: 10px 20px;
+    clear: both;
+    color: black;
+    background-color: rgb(215, 250, 16);
+    letter-spacing: 1.3px;
+    font-size: 15px;
+    font-weight: 900;
+    position: absolute;
+    top: 810px;
+    right: 6%;
+    font-family: 'Fjalla One', sans-serif;
+    text-transform: uppercase;
+    border: none;
+}
+
+/* 
+gallery
+gallery
+gallery
+gallery
+gallery
+gallery
+gallery
+gallery
+gallery */
+
+.gallery-container h4 {
+    font-family: 'Fjalla One', sans-serif;
+    text-transform: uppercase;
+    font-size: 26px;
+    width: 90%;
+    padding-left: 17px;
+    letter-spacing: 1.2px;
+    font-style: italic;
+    line-height: 35px;
+    margin-bottom: 120px;
+}
+.gallery-container .barack {
+    font-style: initial;
+}
+
+.facs {
+    width: 100%;
+    clear: both;
+    padding-top: 120px;
+    padding-bottom: 70px;
+}
+
+.facs h3 {
+    font-family: 'Fjalla One', sans-serif;
+    text-transform: uppercase;
+    font-size: 26px;
+    width: 90%;
+    padding-left: 17px;
+    letter-spacing: 1.2px;
+    text-align: center;
+}
+
+.fac1, .fac2, .fac3, .fac4, .fac5, .fac6 {
+    font-family: 'Noto Serif SC', serif;
+    font-size: 14px;
+    width: 90%;
+    padding-left: 17px;
+    letter-spacing: 1.2px;
+    text-align: center;
+}
+
+.fac1 h5, .fac2 h5, .fac3 h5, .fac4 h5, .fac5 h5, .fac6 h5 {
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 18px;
+    width: 90%;
+    margin: auto;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    padding-top: 50px;
+    margin-bottom: 0px;
+    text-align: center;
+}
+
+.fac1 h5 {
+    padding-top: 25px;
+}
+
+/* footerfooterfooterfooterfooterfooter */
+
+/* footerfooterfooterfooterfooterfooter */
+
+/* footerfooterfooterfooterfooterfooter */
+
+/* footerfooterfooterfooterfooterfooter */
+
+.footer ul {
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 15px;
+    width: 100%;
+    margin: auto;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    margin-bottom: 0px;
+    text-align: center;
+    background-color: #c21e29;
+}
+
+.footer ul li {
+    width: 49%;
+    display: inline-block;
+    margin: auto;
+}
+
+.footer ul li a {
+    text-decoration: none;
+    color: #c20b18;
+    color: white;
+    text-shadow: 0px 0px 10px darkred;
+}
+
+
+
+/* ABOUT PAGEABOUT PAGEABOUT PAGEAEABOUT PAGEABOUT PAGE */
+
+.nav-main2 {
+    background-image: url(assets/aboutimg.jpg);
+    background-size: cover;
+    height: 570px;
+    background-position: center;
+}
+
+.aboutopeningimg {
+    height: 300px;
+}
+
+.aboutopeningimg h3 {
+    font-family: 'Fjalla One', sans-serif;
+    color: white;
+    position: relative;
+    top: -115px;
+    font-size: 45px;
+    text-transform: uppercase;
+    left: 5%;
+    display: inline-block;
+}
+
+.aboutopeningtext p {
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 37px;
+    position: relative;
+    width: 90%;
+    margin: auto;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    left: 0%;
+    top: -128px;
+}
+
+.mission h4 {
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 27px;
+    width: 90%;
+    margin: auto;
+    line-height: 80px;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    font-weight: 900;
+}
+
+.missiontext p:first-child {
+    margin-bottom: 30px;
+    font-weight: 900;
+}
+.missiontext p {
+    font-family: 'Noto Serif SC', serif;
+    width: 90%;
+    font-size: 15px;
+    margin: auto;
+    letter-spacing: 1.0px;
+    line-height: 19px;
+    margin-bottom: 20px;
+}
+
+.missiontext p:last-child {
+    margin-bottom: 120px;
+}
+
+.ourstory h4 {
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 27px;
+    width: 90%;
+    margin: auto;
+    line-height: 80px;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    font-weight: 900;
+}
+
+.ourstorytext p {
+    font-family: 'Noto Serif SC', serif;
+    width: 90%;
+    font-size: 15px;
+    margin: auto;
+    letter-spacing: 1.0px;
+    line-height: 19px;
+    margin-bottom: 20px;
+}
+
+.ourstorytext p:last-child {
+    margin-bottom: 120px;
+}
+
+.ourstoryimg {
+    background-image: url(assets/8.jpg);
+    height: 470px;
+    width: 100%;
+    background-size: cover;
+    margin-bottom: 30px;
+}
+
+.quote h4 {
+    font-family: 'Fjalla One', sans-serif;
+    text-transform: uppercase;
+    font-size: 26px;
+    width: 90%;
+    letter-spacing: 1.2px;
+    font-style: italic;
+    line-height: 35px;
+    margin-bottom: 120px;
+}
+.quote .name {
+    font-style: initial;
+}
+
+
+/* DONATIONS PAGEDONATIONS PAGEDONATIONS PAGEDONATIONS PAGE *//* DONATIONS PAGEDONATIONS PAGEDONATIONS PAGEDONATIONS PAGE *//* DONATIONS PAGEDONATIONS PAGEDONATIONS PAGEDONATIONS PAGE */
+
+.nav-main3 {
+    background-image: url(assets/donation.jpg);
+    background-size: cover;
+    height: 570px;
+    background-position: center;
+}
+
+.donationimg h3 {
+    font-family: 'Fjalla One', sans-serif;
+    color: white;
+    position: relative;
+    top: -115px;
+    font-size: 42px;
+    text-transform: uppercase;
+    left: 5%;
+    width: 92%;
+}
+
+.donationwaysimg {
+    background-image: url(assets/23.png);
+    background-size: cover;
+    width: 100%;
+    margin-top: -115px;
+    background-position: center;
+    height: 340px;
+    background-repeat: no-repeat;
+}
+
+.donationtext {
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 15px;
+    width: 90%;
+    margin: auto;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 1.2px;
+}
+
+.donationways {
+    margin: 50px;
+}
+.donationways a {
+    text-decoration: none;
+    color: black;
+}
+
+.wrapper {
+    width: 92%;
+    margin: auto;
+    display: flex;
+    box-shadow: 0 0 40px rgba(211, 211, 211, 0.5);
+    margin-bottom: 120px;
+}
+
+.wrapper .donation-container {
+    width: 100%;
+    height: 100%;
+    padding: 30px;
+}
+
+.wrapper .donation-container h3 {
+    margin-bottom: 25px;
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 25px;
+    letter-spacing: 1.4px;
+    text-align: center;
+    font-family: 'Fjalla One', sans-serif;
+}
+
+
+.wrapper .donation-container h4 {
+    margin-bottom: 15px;
+    font-size: 17px;
+    margin-top: 30px;
+    letter-spacing: 1.1px;
+    text-transform: uppercase;
+    text-align: center;
+    font-family: 'Fjalla One', sans-serif;
+}
+
+.wrapper .donation-container .form .input_field {
+    margin-bottom: 10px;
+    padding: 10px;
+    font-family: 'Fjalla One', sans-serif;
+}
+
+.wrapper .donation-container .form .input_field label {
+    display: block;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+    font-size: 13px;
+    letter-spacing: 1.5px;
+}
+
+
+
+.wrapper .donation-container .btn {
+    background: rgb(215, 250, 16);
+    padding: 10px;
+    margin-top: 15px;
+}
+
+.wrapper .donation-container .btn a {
+    color: black;
+    display: block;
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-family: 'Fjalla One', sans-serif;
+    letter-spacing: 1.2px;
+}
+
+.wrapper .donation-container .input_field input {
+    width: 92%;
+    border: 1px solid black;
+    padding: 10px;
+    display: inline-block;
+    margin: auto;
+    font-family: 'Noto Serif SC', serif;
+    font-size: 14px;
+    letter-spacing: 1.2px;
+}
+
+.wrapper .donation-container .radiochoices {
+    margin-bottom: 45px;
+    width: 104%;
+}
+
+.wrapper .donation-container .radiochoices .input_field {
+    width: 40%;
+    display: inline-block;
+    margin: auto;
+    border: none;
+    font-family: 'Fjalla One', sans-serif;
+}
+
+.wrapper .donation-container .radiochoices .input_field input {
+    width: 30%;
+}
+.wrapper .donation-container .radiochoices .input_field label {
+    width: 49%;
+    display: inline;
+    padding-right: 30px;
+    font-family: 'Fjalla One', sans-serif;
+}
+
+.wrapper .donation-container .radiochoices .input_field .lastradio {
+    width: 13%;
+}
+.wrapper .donation-container .radiochoices .input_field input:last-child {
+    width: 47%;
+    height: 5px;
+    display: inline;
+    font-family: 'Fjalla One', sans-serif;
+}
+
+
+.wrapper .donation-container .radiochoices .input_field:last-child {
+    width: 90%;
+}
+
+
+
+
+
+/* BLOGBLOGBLOGBLOGBLOGBLOGBLOGBLOGBLOGBLOGBLOGBLOG */
+
+.nav-main4 {
+    background-image: url(assets/blog.jpg);
+    background-size: cover;
+    height: 570px;
+}
+   
+.newsletter-container {
+    padding: 110px 20px;
+    text-align: center;
+}
+
+.newsletter-container p {
+    max-width: 600px;
+    margin: 40px auto;
+    font-size: 15px;
+
+}
+
+.email-box {
+    height: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+.email-box p {
+    width: 40px;
+    position: relative;
+    font-size: 40px;
+    top: -124%;
+}
+
+.tbox, .btn {
+    border: none;
+    outline: none;
+}
+
+.tbox {
+    border: 1px solid black;
+    margin-right: 10px;
+    width: 70%;
+}
+
+
+.btn {
+    background: rgb(215, 250, 16);
+    color: black;
+    padding: 0 10px;
+    text-transform: uppercase;
+}
+
+.newsletter-container h1 {
+    font-family: 'Fjalla One', sans-serif;
+    letter-spacing: 2.7px;
+    font-size: 27px;
+    color: black;
+    text-transform: uppercase;
+    font-weight: 900;
+}
+
+/* RECENT NEWSRECENT NEWS   1 */
+
+.recentnews h4 {
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 27px;
+    width: 90%;
+    margin: auto;
+    line-height: 80px;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    font-weight: 900;
+}
+
+.recentnews h5 {
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 20px;
+    width: 90%;
+    margin: 30px auto;
+    line-height: 26px;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    font-weight: 900;
+}
+
+.recentnewstext p {
+    font-family: 'Noto Serif SC', serif;
+    width: 90%;
+    font-size: 15px;
+    margin: auto;
+    letter-spacing: 1.0px;
+    line-height: 19px;
+    margin-bottom: 20px;
+}
+
+.recentnewstext p:first-child {
+    font-weight: 900;
+}
+
+.recentnewstext p:last-child {
+    margin-bottom: 120px;
+}
+
+.recentnewsimg {
+    background-image: url(assets/24.jpg);
+    height: 470px;
+    width: 100%;
+    background-size: cover;
+    margin-bottom: 30px;
+}
+
+/* RECENT NEWSRECENT NEWS   2 */
+
+.recentnews2 h5 {
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 20px;
+    width: 90%;
+    margin: 30px auto;
+    line-height: 26px;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    font-weight: 900;
+}
+
+.recentnewstext2 p {
+    font-family: 'Noto Serif SC', serif;
+    width: 90%;
+    font-size: 15px;
+    margin: auto;
+    letter-spacing: 1.0px;
+    line-height: 19px;
+    margin-bottom: 20px;
+}
+
+.recentnewstext2 p:first-child {
+    font-weight: 900;
+}
+.recentnewstext2 p:last-child {
+    margin-bottom: 120px;
+}
+
+.recentnewsimg2 {
+    background-image: url(assets/murder.jpg);
+    height: 470px;
+    width: 100%;
+    background-size: cover;
+    margin-bottom: 30px;
+}
+
+
+
+
+
+/* RECENT NEWSRECENT NEWS   3 */
+
+
+.recentnews3 h5 {
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 20px;
+    width: 90%;
+    margin: 30px auto;
+    line-height: 26px;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    font-weight: 900;
+}
+
+.recentnewstext3 p {
+    font-family: 'Noto Serif SC', serif;
+    width: 90%;
+    font-size: 15px;
+    margin: auto;
+    letter-spacing: 1.0px;
+    line-height: 19px;
+    margin-bottom: 20px;
+}
+
+.recentnewstext3 p:first-child {
+    font-weight: 900;
+}
+.recentnewstext3 p:last-child {
+    margin-bottom: 120px;
+}
+
+.recentnewsimg3 {
+    background-image: url(assets/dodger.jpg);
+    height: 470px;
+    width: 100%;
+    background-size: cover;
+    margin-bottom: 30px;
+}
