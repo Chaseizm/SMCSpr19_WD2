@@ -4,6 +4,10 @@ body {
     margin: 0px;
 }
 
+
+.desktop {
+    display: none;
+}
 .nav-main {
     width: 100%;
     display: flex;
@@ -28,6 +32,7 @@ body {
 
 .nav-main a {
     text-decoration: none;
+    height: 100px;
 }
 
 .btn-toggle-nav {
@@ -61,8 +66,6 @@ body {
     visibility: hidden;
     font-family: 'Fjalla One', sans-serif;
     position: relative;
-    top: 8%;
-
 }
 
 .nav-sidebar ul li {
@@ -76,7 +79,9 @@ body {
     color: black;
 }
 
-
+.nav-sidebar > a {
+    display: none;
+}
 
 
 
@@ -110,6 +115,8 @@ ul li ul li {
     z-index: 1000;
 }
 
+
+
 .nav-sidebar #toggle2:checked + ul li, #toggle3:checked + ul li, #toggle4:checked + ul li, #toggle5:checked + ul li {
     display: block;
     width: 74%;
@@ -139,7 +146,7 @@ ul li ul li {
 #toggle2 , #toggle3 , #toggle4 , #toggle5 {
     position: absolute;
     right: 10%;
-    display: none;
+    opacity: .1;
 }
 .arrow {
     position: absolute;
@@ -194,11 +201,11 @@ ul li ul li {
 
 
 .openingtext .sub {
-    font-size: 20px;
+    font-size: 17px;
     color: black;
     font-weight: 900;
     letter-spacing: 1.2px;
-    line-height: 26px;
+    line-height: 29px;
     position: relative;
     display: block;
     margin: auto;
@@ -244,7 +251,7 @@ gallery */
     padding-left: 17px;
     letter-spacing: 1.2px;
     font-style: italic;
-    line-height: 35px;
+    line-height: 40px;
     margin-bottom: 120px;
 }
 .gallery-container .barack {
@@ -275,6 +282,7 @@ gallery */
     padding-left: 17px;
     letter-spacing: 1.2px;
     text-align: center;
+    line-height: 25px;
 }
 
 .fac1 h5, .fac2 h5, .fac3 h5, .fac4 h5, .fac5 h5, .fac6 h5 {
@@ -364,6 +372,7 @@ gallery */
     letter-spacing: 1.2px;
     left: 0%;
     top: -128px;
+    line-height: 47px;
 }
 
 .mission h4 {
@@ -373,7 +382,7 @@ gallery */
     margin: auto;
     line-height: 80px;
     text-transform: uppercase;
-    letter-spacing: 1.2px;
+    letter-spacing: 2px;
     font-weight: 900;
 }
 
@@ -387,7 +396,7 @@ gallery */
     font-size: 15px;
     margin: auto;
     letter-spacing: 1.0px;
-    line-height: 19px;
+    line-height: 25px;
     margin-bottom: 20px;
 }
 
@@ -402,7 +411,7 @@ gallery */
     margin: auto;
     line-height: 80px;
     text-transform: uppercase;
-    letter-spacing: 1.2px;
+    letter-spacing: 2px;
     font-weight: 900;
 }
 
@@ -412,7 +421,7 @@ gallery */
     font-size: 15px;
     margin: auto;
     letter-spacing: 1.0px;
-    line-height: 19px;
+    line-height: 25px;
     margin-bottom: 20px;
 }
 
@@ -435,7 +444,7 @@ gallery */
     width: 90%;
     letter-spacing: 1.2px;
     font-style: italic;
-    line-height: 35px;
+    line-height: 41px;
     margin-bottom: 120px;
 }
 .quote .name {
@@ -490,6 +499,8 @@ gallery */
     text-decoration: none;
     color: black;
 }
+
+
 
 .wrapper {
     width: 92%;
@@ -546,6 +557,8 @@ gallery */
     background: rgb(215, 250, 16);
     padding: 10px;
     margin-top: 15px;
+    width: 85%;
+    margin: auto;
 }
 
 .wrapper .donation-container .btn a {
@@ -576,7 +589,7 @@ gallery */
 }
 
 .wrapper .donation-container .radiochoices .input_field {
-    width: 40%;
+    width: 42%;
     display: inline-block;
     margin: auto;
     border: none;
@@ -597,7 +610,7 @@ gallery */
     width: 13%;
 }
 .wrapper .donation-container .radiochoices .input_field input:last-child {
-    width: 47%;
+    width: 44%;
     height: 5px;
     display: inline;
     font-family: 'Fjalla One', sans-serif;
@@ -605,7 +618,7 @@ gallery */
 
 
 .wrapper .donation-container .radiochoices .input_field:last-child {
-    width: 90%;
+    width: 94%;
 }
 
 
@@ -615,13 +628,43 @@ gallery */
 /* BLOGBLOGBLOGBLOGBLOGBLOGBLOGBLOGBLOGBLOGBLOGBLOG */
 
 .nav-main4 {
-    background-image: url(assets/blog.jpg);
+    background-image: url(assets/blogimg.jpg);
     background-size: cover;
     height: 570px;
 }
+
+.title {
+        height: 60px;
+    }
+
+
+.title h3 {
+    letter-spacing: 1.2px;
+    font-family: 'Fjalla One', sans-serif;
+    color: white;
+    position: relative;
+    top: -109px;
+    font-size: 45px;
+    text-transform: uppercase;
+    left: 5%;
+    display: inline-block;
+}
+
+.title h4 {
+    font-family: 'Fjalla One', sans-serif;
+    color: black;
+    position: relative;
+    top: -195px;
+    font-size: 45px;
+    text-transform: uppercase;
+    left: 5%;
+    font-weight: 300;
+    letter-spacing: 1.2px;
+    display: inline-block;
+}
    
 .newsletter-container {
-    padding: 110px 20px;
+    padding: 105px 20px;
     text-align: center;
 }
 
@@ -653,14 +696,17 @@ gallery */
 .tbox {
     border: 1px solid black;
     margin-right: 10px;
-    width: 70%;
+    width: 62.5%;
+    padding: 15px;
 }
 
 
 .btn {
     background: rgb(215, 250, 16);
     color: black;
-    padding: 0 10px;
+    letter-spacing: 1.2px;
+    font-weight: 600;
+    padding: 0 12px;
     text-transform: uppercase;
 }
 
@@ -671,6 +717,7 @@ gallery */
     color: black;
     text-transform: uppercase;
     font-weight: 900;
+    margin-bottom: 40px;
 }
 
 /* RECENT NEWSRECENT NEWS   1 */
@@ -691,7 +738,7 @@ gallery */
     font-size: 20px;
     width: 90%;
     margin: 30px auto;
-    line-height: 26px;
+    line-height: 33px;
     text-transform: uppercase;
     letter-spacing: 1.2px;
     font-weight: 900;
@@ -703,7 +750,7 @@ gallery */
     font-size: 15px;
     margin: auto;
     letter-spacing: 1.0px;
-    line-height: 19px;
+    line-height: 26px;
     margin-bottom: 20px;
 }
 
@@ -730,7 +777,7 @@ gallery */
     font-size: 20px;
     width: 90%;
     margin: 30px auto;
-    line-height: 26px;
+    line-height: 33px;
     text-transform: uppercase;
     letter-spacing: 1.2px;
     font-weight: 900;
@@ -742,7 +789,7 @@ gallery */
     font-size: 15px;
     margin: auto;
     letter-spacing: 1.0px;
-    line-height: 19px;
+    line-height: 26px;
     margin-bottom: 20px;
 }
 
@@ -773,7 +820,7 @@ gallery */
     font-size: 20px;
     width: 90%;
     margin: 30px auto;
-    line-height: 26px;
+    line-height: 33px;
     text-transform: uppercase;
     letter-spacing: 1.2px;
     font-weight: 900;
@@ -785,7 +832,7 @@ gallery */
     font-size: 15px;
     margin: auto;
     letter-spacing: 1.0px;
-    line-height: 19px;
+    line-height: 26px;
     margin-bottom: 20px;
 }
 
